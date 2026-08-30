@@ -1,0 +1,43 @@
+{
+    "name": "italix/calendars",
+    "description": "Calendar sets and event feeds: sources declared in PHP, driver-rendered client configuration",
+    "type": "library",
+    "license": "MPL-2.0",
+    "version": "1.2.1",
+    "keywords": [
+        "calendar",
+        "events",
+        "feed",
+        "scheduling"
+    ],
+    "homepage": "https://github.com/italix-net/calendars",
+    "authors": [
+        {
+            "name": "Italix",
+            "email": "info@italix.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "italix/contracts": "^2.0"
+    },
+    "require-dev": {
+        "italix/testing": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Italix\\Calendars\\": ""
+        },
+        "files": [
+            "functions.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": [
+            "php tests/CalendarsTest.php",
+            "php tests/SourcesAndFeedTest.php"
+        ]
+    }
+}
